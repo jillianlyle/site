@@ -1,0 +1,74 @@
+<style>
+    h2 {
+    color:#27ae60;
+    border-bottom:3px dashed #ccc;
+    font-style:bold;
+    font-size: 32px;
+    }
+body{
+    font-family:sans-serif;
+    font-size:15px;
+    background-image: url(http://letsbonus5.statics.download/products/164000/164679/13584378987941-0-680x276.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: top;
+    background-size:100% 49%;
+}
+h1 {
+    color:white;
+    text-align:center;
+    margin:auto;
+    padding-top:130px;
+    font-size: 58px;
+    border-bottom-style:solid;
+    border-bottom-color:#000000;
+    padding-bottom:118px;
+    border-bottom-width:7px;
+}
+h2 {
+    color:#000000;
+    font-style:bold;
+    font-size: 32px;
+}
+h3 {
+    color:#27ae60;
+    font-style:bold;
+    font-size:32px;
+}
+div.box1 {
+    border-style:solid;
+    border-color:#ffffff;
+    border-radius:10px;
+    border-width:1px;
+    margin-left:26px;
+    max-width:350px;
+    padding-top:1px;
+    padding:7px;
+}
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    margin-right:10px;
+    overflow: hidden;
+    top: 9px;
+    font-size:25px;
+    position:fixed;
+}
+    li {
+        float:right;
+    }
+    li a {
+        display:block;
+        color:white;
+        font-weight:bold;
+        text-align:center;
+        margin:15px;
+        text-decoration: none;
+    }
+    li a:hover{
+        border-style:solid;
+        border-color:#ffffff;
+        padding:15px;
+    }
+</style>
