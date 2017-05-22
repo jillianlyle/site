@@ -1,7 +1,7 @@
 <html>
 <head>
-    <title>Welcome to website</title>
-    <link rel='stylesheet' href="style.css?Time=<?php echo microtime()?>" />
+    <title>home</title>
+    <link rel='stylesheet' href="homepage.css?Time=<?php echo microtime()?>" />
 </head>
 
 <body>
@@ -23,12 +23,7 @@
 </div>
 <div class="box2">
     <h3>what I'm listening to</h3>
-    <p>
-        spotify</p>
-    </div>
-        <div class="box3">
-    <h4>*picture of me with links to websites</h4>
-</div>
+    <br>spotify
 </div>
 </body>
 

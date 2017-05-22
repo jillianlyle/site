@@ -1,10 +1,10 @@
 <html>
     <head>
         <title>about</title>
-        <link rel="stylesheet" href="styles.css?Time=<?php echo microtime()?>" />
+        <link rel="stylesheet" href="contentpages.css?Time=<?php echo microtime()?>" />
     </head>
     <body>
-        <div class="headerbluebackground">
+        <div class="headerBlueBackground">
         <ul>
             <li><a class="active" href="index.php">home</a></li>
             <li><a href="contact.php">say hello</a></li>
@@ -14,11 +14,16 @@
         </ul>
         <h1>who is jillian?</h1>
     </div>
-        <P>From San Diego, California
-            <br>Currently: Saint Louis, Missouri
+    <div class="personalInfo">
+        <br><img src="Jillian_Picture.jpg" alt="Picture of me" width=300px>
+        <p><u>From:</u> San Diego, California
+            <br><u>Currently:</u> Saint Louis, Missouri
             <br>I'm studying economics and psychology at Washington University
             <br>I love horses
             <br>Incredibly afraid of heights
+            <br>
+            <br><u>Passionate about - </u>
         </p>
+    </div>
     </body>
 </html>
