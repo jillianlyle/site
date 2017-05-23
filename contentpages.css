@@ -1,0 +1,98 @@
+body{
+    font-family:serif;
+    font-size:15px;
+    margin:0px;
+}
+a:link{
+    color:#000000;
+}
+a:visited{
+    color:#000000;
+}
+a:hover{
+    background-color:#eeeeee;
+}
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    margin-right:10px;
+    overflow: hidden;
+    top: 9px;
+    font-size:25px;
+    width:100%;
+}
+    li{
+        float:right;
+        color:white;
+    }
+    li a {
+        display:block;
+        color:white;
+        font-weight:bold;
+        text-align:center;
+        margin:20px;
+        text-decoration:none;
+    }
+    li a:hover{
+        border-style:solid;
+        border-color:#ffffff;
+        background-color:#a8c9ff;
+        padding:10px;
+        margin:0px;
+    }
+    li a:link{
+        color:#ffffff;
+    }
+    li a:visited{
+        color:#ffffff;
+    }
+div.headerBlueBackground{
+    background-color:#a8c9ff;
+}
+h1 {
+    color:white;
+    padding:50px 50px 100px;
+    font-size: 60px;
+    text-align:center;
+    border-style:solid;
+    border-color:#a8c9ff;
+    background-color:#a8c9ff;
+    margin:0px;
+}
+div.personalInfo{
+    text-align:center;
+    color:#713e99;
+}
+div.blogBox{
+    float:left;
+    display:inline;
+    margin:0px 100px;
+    text-align:center;
+}
+    div.blogBox h2{
+        color:blue;
+        font-weight:bold;
+        font-size: 32px;
+    }
+div.inspoBox{
+    float:right;
+    display:inline;
+    margin:0px 100px;
+    text-align:center;
+}
+    div.inspoBox h3{
+        color:blue;
+        font-weight:bold;
+        font-size:32px;
+    }
+div.resume{
+    text-align:center;
+    font-size:30px;
+    background-image:url(resumeFlowers.jpg);
+    background-position:bottom;
+}
+div.sayHelloInformation{
+    text-align:center;
+    font-size:30px;
+}

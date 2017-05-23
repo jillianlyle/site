@@ -1,0 +1,78 @@
+body{
+    font-family:serif;
+    font-size:19px;
+    margin:0px;
+}
+img{
+    width:100%;
+}
+div.headerbackgroundimage{
+    background: url(homepagesunset.jpg);
+    margin:auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+h1 {
+    color:white;
+    font-size: 60px;
+    text-align:center;
+    padding:90px 50px 180px;
+}
+h2 {
+    color:#000000;
+    font-style:bold;
+    font-size: 32px;
+}
+h3 {
+    color:#000000;
+    font-style:bold;
+    font-size:32px;
+}
+div.welcomeboxes {
+    margin-left:20px;
+    margin-top:30px;
+    text-align:left;
+}
+div.box1{
+    max-width:500px;
+    float:left;
+    display:inline;
+    margin:0px 20px;
+    border-style:dashed;
+    border-color:blue;
+    padding:7px;
+}
+div.box2{
+    float:left;
+    display:inline;
+    margin:0px 20px;
+    border-style:dashed;
+    border-color:blue;
+    padding:7px;
+}
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    margin-right:10px;
+    overflow: hidden;
+    top: 9px;
+    font-size:25px;
+}
+    li {
+        float:right;
+    }
+    li a {
+        display:block;
+        color:white;
+        font-weight:bold;
+        text-align:center;
+        margin:20px;
+        text-decoration: none;
+    }
+    li a:hover{
+        border-style:solid;
+        border-color:#ffffff;
+        padding:10px;
+        margin:0px;
+    }
