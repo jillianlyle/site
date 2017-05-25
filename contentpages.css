@@ -1,6 +1,6 @@
 body{
     font-family:serif;
-    font-size:15px;
+    font-size:20px;
     margin:0px;
 }
 a:link{
@@ -49,50 +49,63 @@ ul {
     }
 div.headerBlueBackground{
     background-color:#a8c9ff;
+    padding-bottom:130px;
 }
 h1 {
     color:white;
-    padding:50px 50px 100px;
-    font-size: 60px;
+    font-size: 80px;
     text-align:center;
-    border-style:solid;
-    border-color:#a8c9ff;
     background-color:#a8c9ff;
-    margin:0px;
+    font-family:Barrio;
+    border-style:double;
+    border-color:#ffffff;
+    margin:53.6px 240px;
 }
 div.personalInfo{
     text-align:center;
     color:#713e99;
 }
-div.blogBox{
-    float:left;
-    display:inline;
-    margin:0px 100px;
-    text-align:center;
+div.blogInspirationTable table{
+    width:100%;
 }
-    div.blogBox h2{
+    div.blogInspirationTable th{
         color:blue;
         font-weight:bold;
-        font-size: 32px;
+        font-size:45px;
+        text-align:center;
     }
-div.inspoBox{
-    float:right;
-    display:inline;
-    margin:0px 100px;
-    text-align:center;
+    div.blogInspirationTable td{
+        text-align:center;
+        width:150px;
+    }
+div.postSubHeader h2{
+    margin:20px 20px 0px;
+    text-decoration:underline;
+    font-family:Barrio;
+    text-align:left;
+    font-size:50px;
+    color:black;
+    }
+div.postBody{
+    margin:20px;
 }
-    div.inspoBox h3{
-        color:blue;
-        font-weight:bold;
-        font-size:32px;
-    }
 div.resume{
     text-align:center;
     font-size:30px;
-    background-image:url(resumeFlowers.jpg);
-    background-position:bottom;
 }
 div.sayHelloInformation{
     text-align:center;
     font-size:30px;
 }
+div.backNextOnViewPostPage{
+    text-align:center;
+}
+    div.backNextOnViewPostPage table{
+        width:100%;
+        position:absolute;
+        bottom:0px;
+        font-size:30px;
+    }
+    div.backNextOnViewPostPage th{
+        width:400px;
+    }

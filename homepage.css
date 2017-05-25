@@ -1,54 +1,7 @@
 body{
     font-family:serif;
-    font-size:19px;
+    font-size:20px;
     margin:0px;
-}
-img{
-    width:100%;
-}
-div.headerbackgroundimage{
-    background: url(homepagesunset.jpg);
-    margin:auto;
-    background-repeat:no-repeat;
-    background-size:cover;
-}
-h1 {
-    color:white;
-    font-size: 60px;
-    text-align:center;
-    padding:90px 50px 180px;
-}
-h2 {
-    color:#000000;
-    font-style:bold;
-    font-size: 32px;
-}
-h3 {
-    color:#000000;
-    font-style:bold;
-    font-size:32px;
-}
-div.welcomeboxes {
-    margin-left:20px;
-    margin-top:30px;
-    text-align:left;
-}
-div.box1{
-    max-width:500px;
-    float:left;
-    display:inline;
-    margin:0px 20px;
-    border-style:dashed;
-    border-color:blue;
-    padding:7px;
-}
-div.box2{
-    float:left;
-    display:inline;
-    margin:0px 20px;
-    border-style:dashed;
-    border-color:blue;
-    padding:7px;
 }
 ul {
     list-style-type:none;
@@ -76,3 +29,27 @@ ul {
         padding:10px;
         margin:0px;
     }
+div.headerBackgroundImage{
+    background: url(homepagesunset.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    padding-bottom:180px;
+}
+h1 {
+    color:white;
+    font-size: 80px;
+    text-align:center;
+    border-style:double;
+    border-color:#ffffff;
+    margin: 53.6px 240px;
+    font-family:Barrio;
+}
+h2 {
+    color:#000000;
+    font-style:bold;
+    font-size: 32px;
+}
+div.welcomeBox {
+    margin-left:20px;
+    text-align:left;
+}
