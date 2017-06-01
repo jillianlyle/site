@@ -12,11 +12,9 @@ siteHeader('blog', 'blog + inspiration'); ?>
         <td>
             <ul>
                 <?php
-                $display=blogData();
-                for ($i=0; $i<count($display);$i++) {
-                    $postID=$display[$i]['postID'];
-                    $postTitle=$display[$i]['title'];
-                    echo '<a href="viewpost.php?postID='.$postID.'">'.$postTitle.'</a><br/><br/>';
+                for ($i=1; $i<=3; $i++){
+                    $display=getPostInformation($i);
+                    echo '<a href="viewpost.php?postID='.$display['blogPostID'].'">'.$display['title'].'</a><br/><br/>';
                 }
                  ?>
             </ul>

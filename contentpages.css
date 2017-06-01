@@ -37,7 +37,7 @@ ul {
     li a:hover{
         border-style:solid;
         border-color:#ffffff;
-        background-color:#a8c9ff;
+        background-color:#cdcaf6;
         padding:10px;
         margin:0px;
     }
@@ -48,14 +48,14 @@ ul {
         color:#ffffff;
     }
 div.headerBlueBackground{
-    background-color:#a8c9ff;
+    background-color:#cdcaf6;
     padding-bottom:130px;
 }
 h1 {
     color:white;
     font-size: 80px;
     text-align:center;
-    background-color:#a8c9ff;
+    background-color:#cdcaf6;
     font-family:Barrio;
     border-style:double;
     border-color:#ffffff;
@@ -69,7 +69,7 @@ div.blogInspirationTable table{
     width:100%;
 }
     div.blogInspirationTable th{
-        color:blue;
+        color:#edaaf6;
         font-weight:bold;
         font-size:45px;
         text-align:center;
@@ -77,6 +77,8 @@ div.blogInspirationTable table{
     div.blogInspirationTable td{
         text-align:center;
         width:150px;
+        vertical-align:top;
+        padding-top:10px;
     }
 div.postSubHeader h2{
     margin:20px 20px 0px;
@@ -88,6 +90,31 @@ div.postSubHeader h2{
     }
 div.postBody{
     margin:20px;
+    margin-bottom:40px;
+}
+div.blogCommentForm{
+    margin-top:10px;
+    margin-bottom:0px;
+}
+    div.blogCommentForm h3{
+        font-weight:bold;
+        margin-bottom:0px;
+    }
+div.postComment {
+    margin-left:20px;
+    margin-right:20px;
+    border-style:solid;
+    border-color:#adeaf6;
+}
+div.blogListeningImages{
+    width:100%;
+}
+div.blogListeningImages img{
+    width:31%;
+    display:inline-block;
+    margin-right:10px;
+    margin-left:10px;
+    position:relative;
 }
 div.resume{
     text-align:center;
@@ -102,9 +129,10 @@ div.backNextOnViewPostPage{
 }
     div.backNextOnViewPostPage table{
         width:100%;
-        position:absolute;
         bottom:0px;
         font-size:30px;
+        padding-top:10px;
+        overflow:hidden;
     }
     div.backNextOnViewPostPage th{
         width:400px;
