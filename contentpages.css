@@ -49,7 +49,7 @@ ul {
     }
 div.headerBlueBackground{
     background-color:#cdcaf6;
-    padding-bottom:130px;
+    padding-bottom:80px;
 }
 h1 {
     color:white;
@@ -80,6 +80,9 @@ div.blogInspirationTable table{
         vertical-align:top;
         padding-top:10px;
     }
+        div.blogInspirationTable td img {
+            vertical-align:middle;
+        }
 div.postSubHeader h2{
     margin:20px 20px 0px;
     text-decoration:underline;
@@ -99,12 +102,57 @@ div.blogCommentForm{
     div.blogCommentForm h3{
         font-weight:bold;
         margin-bottom:0px;
+        margin-left:0px;
     }
 div.postComment {
     margin-left:20px;
     margin-right:20px;
+    margin-bottom:40px;
     border-style:solid;
     border-color:#adeaf6;
+}
+div.allPostComments {
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:20px;
+    padding-top:10px;
+    border-style:solid;
+    border-color:#adeaf6;
+}
+    div.allPostComments:hover{
+        background-color:#adeaf6;
+        opacity:0.4;
+        font-weight:bold;
+    }
+div.commentNumber{
+    border-style:solid;
+    border-radius:50%;
+    text-align:center;
+    display:inline;
+    padding:5px;
+    margin-left:3px;
+}
+div.nameComment{
+    margin-top:10px;
+}
+    div.nameComment table{
+        display:inline;
+        max-width:110px;
+    }
+    div.nameComment tr{
+        vertical-align: top;
+    }
+    div.NameComment th{
+        text-align:left;
+        width:50%;
+        font-weight:bold;
+        vertical-align: top;
+        overflow:hidden;
+        font-size:22px;
+    }
+h3 {
+    margin-left:20px;
+    margin-bottom:5px;
 }
 div.blogListeningImages{
     width:100%;
@@ -124,6 +172,20 @@ div.sayHelloInformation{
     text-align:center;
     font-size:30px;
 }
+div.sendMessageForm{
+    text-align:center;
+}
+    div.sendMessageForm input[type=text]{
+        padding:12px 20px;
+        font-size:22px;
+        margin:8px 0px;
+        border:none;
+        border-bottom:2px solid black;
+    }
+    div.sentMessageThanks{
+        text-align:center;
+        margin-top:20px;
+    }
 div.backNextOnViewPostPage{
     text-align:center;
 }

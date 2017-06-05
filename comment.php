@@ -1,17 +1,15 @@
 <?php include('config/init.php');
 $post = getPostInformation($_REQUEST['ID']);
 siteHeader('comments','blog + inspiration');
-$body=$_POST['body'];
-$name=$_POST['name'];
-$email=$_POST['email'];
-$number=$post['blogPostID'];
-$link =mysqli_connect("192.168.33.12", "cf", "password", "cf");
-if($link==false) {
-    die("ERROR:could not connect." .mysqli_connect_error());
-}
-$sql="INSERT INTO blog_comments (commentBody, commentName, commentEmail, blogPostID)
-VALUES ('$body','$name','$email','$number')";
-if(mysqli_query($link, $sql)){
+
+$body=$_REQUEST['body'];
+$name=$_REQUEST['name'];
+$email=$_REQUEST['email'];
+$blogPostID=$_REQUEST['ID'];
+
+$result = createComment($body,$name,$email,$blogPostID);
+
+if(isset($result)){
     echo "
     <div class='postSubHeader'>
     <h2>".$post["header"].":</h2>
@@ -20,20 +18,45 @@ if(mysqli_query($link, $sql)){
     ".$post["body"]."
     <br><br>
     </div>
+    <h3>Your comment:</h3>
     <div class='postComment'>
-    name: $name <br/> comment: $body
+        <div class='nameComment'>
+        <table>
+        <tr>
+        <th>name:</th>
+        <th>comment:</th></tr>
+        <tr>
+        <td>$name </td>
+        <td>$body</td></tr>
+        </table>
+        </div>
     </div>
+    <h3>All comments:</h3>";
+}
+$comments=getCommentInformation($_REQUEST['ID']);
+foreach($comments as $index=>$comment){
+    echo"
+    <div class='allPostComments'>
+    <div class='commentNumber'>".$index."</div>
+    <div class='nameComment'>
+    <table>
+    <tr>
+    <th>name:</th>
+    <th>comment:</th>
+    </tr>
+    <tr>
+    <td>".$comment['commentName']."</td>
+    <td> ".$comment['commentBody']."</td>
+    </tr>
+    </table></div>
+    </div>";
+}
+echo "
     <div class='backNextOnViewPostPage'>
     <table>
     <tr>
     <th><a href='Myblog.php'>back to blog + inspiration home</a></th>
-    <th><a href='viewpost.php?postID=".$post["nextPost"]."'>next post</a></th>
     </tr>
     </div>";
-}
-else {
-echo "ERROR:could not execute $sql.".mysqli_error($link);
-}
-mysqli_close($link);
 
  ?>
