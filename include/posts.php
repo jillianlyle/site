@@ -1,32 +1,44 @@
 <?php
-function blogData () {
-    $posts = array(
-        0 => array(
-            'postID' => 0,
-            'header' => 'what im doing',
-            'title' => 'what im doing',
-            'body' => 'Im currently studying psychology and economics and Im hungry',
-            'nextPost' => 1
-        ),
-        1 => array(
-            'postID' => 1,
-            'header' => 'what im listening',
-            'title' => 'what im listening to',
-            'body' => 'Thunder<br/>Im the one<br/>The Difference',
-            'nextPost' => 2
-        ),
-        2=> array(
-            'postID' => 2,
-            'header' => 'favorites',
-            'title' => 'my favorites',
-            'body' => 'I like pasta, horses, spotify, and the ocean.',
-            'nextPost' => 0
-        )
-    );
-    return $posts;
+function getPostInformation ($blogPostID) {
+    $posts = dbQuery("
+    SELECT *
+    FROM blog_post
+    WHERE blogPostID = :Var1
+    ", array("Var1"=>$blogPostID));
+    return $posts->fetch();
 }
-function returnPostInformation ($postID) {
-    $posts = blogData();
-    $post= $posts[$postID];
-    return $post;
+
+function getCommentInformation ($blogPostID) {
+    $posts = dbQuery("
+    SELECT *
+    FROM blog_comments
+    WHERE blogPostID = :Var2
+    ORDER BY commentID DESC
+    ", array("Var2"=>$blogPostID));
+    return $posts->fetchAll();
+    }
+
+function createComment($body, $name, $email, $blogPostID){
+    $create=
+    dbQuery("
+        INSERT INTO blog_comments (commentBody, commentName, commentEmail, blogPostID)
+        VALUES (:body,:name,:email,:blogPostID)",
+        array(
+            "body"=>$body,
+            "name"=>$name,
+            "email"=>$email,
+            "blogPostID"=>$blogPostID
+        ));
+        return $create;
+}
+function sendMessage($name,$email,$message){
+    $send=dbQuery("
+    INSERT INTO contact_messages (contactName, contactEmail, contactMessage)
+    VALUES(:name,:email,:message)",
+    array(
+        "name"=>$name,
+        "email"=>$email,
+        "message"=>$message
+    ));
+    return $send;
 }

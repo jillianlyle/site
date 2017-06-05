@@ -1,5 +1,6 @@
 <?php include ('config/init.php');
-siteHeader('blog', 'blog + inspiration'); ?>
+siteHeader('blog', 'blog + inspiration');
+?>
 <html>
 <body>
 <div class="blogInspirationTable">
@@ -12,22 +13,20 @@ siteHeader('blog', 'blog + inspiration'); ?>
         <td>
             <ul>
                 <?php
-                $display=blogData();
-                for ($i=0; $i<count($display);$i++) {
-                    $postID=$display[$i]['postID'];
-                    $postTitle=$display[$i]['title'];
-                    echo '<a href="viewpost.php?postID='.$postID.'">'.$postTitle.'</a><br/><br/>';
+                for ($i=1; $i<=3; $i++){
+                    $display=getPostInformation($i);
+                    echo '<a href="viewpost.php?postID='.$display['blogPostID'].'">'.$display['title'].'</a><br/><br/>';
                 }
                  ?>
             </ul>
         </td>
         <td>
-            <img src='inspo1.jpg' alt='happy1' width=250px>
-            <img src='inspo2.jpg' alt='happy2' width=250px>
-            <img src='inspo3.jpg' alt='happy3' width=250px>
+            <img src='inspo1.jpg' alt='happy1' width='250px'>
+            <img src='inspo2.jpg' alt='happy2' width='250px'>
+            <img src='inspo3.jpg' alt='happy3' width='250px'>
         </td>
     </tr>
     </table>
 </div>
-    </body>
+</body>
 </html>

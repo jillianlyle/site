@@ -10,5 +10,13 @@ siteHeader('contact me', 'say hello'); ?>
         <br>Instagram: <a href="https://www.instagram.com/jillylyle/">@jillylyle</a>
     </p>
 </div>
+<div class='sendMessageForm'>
+<form action='sentMessage.php' method='post'>
+    <p><input type='text' name='name' placeholder='Full Name *' required></p>
+    <p><input type='text' name='email' placeholder='Email *' required></p>
+    <p><input type='text' name='message' placeholder='Your Message *' required><br>
+    <input type='submit' value='SUBMIT MESSAGE'></p>
+</form>
+</div>
 </body>
 </html>
