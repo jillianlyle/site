@@ -1,11 +1,13 @@
+<?php include('config/init.php'); ?>
 <html>
 <head>
     <title>home</title>
-    <link rel='stylesheet' href="homepage.css?Time=<?php echo microtime()?>" />
+    <link rel='stylesheet' href="homePage.css?Time=<?php echo microtime()?>" />
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
 </head>
 
 <body>
-<div class="headerbackgroundimage">
+<div class="headerBackgroundImage">
         <ul>
             <li><a class="active" href="index.php">home</a></li>
             <li><a href="contact.php">say hello</a></li>
@@ -15,16 +17,10 @@
         </ul>
     <h1> Hi, I'm Jillian. </h1>
 </div>
-<div class="welcomeboxes">
-    <div class="box1">
+<div class="welcomeBox">
     <h2>welcome!</h2>
     <p>
-        My name is Jillian. I'm a student at Washington University learning how to code this summer in stl. I'm glad you're here :-)
-</div>
-<div class="box2">
-    <h3>what I'm listening to</h3>
-    <br>spotify
+        My name is Jillian. I'm a student at Washington University learning how to code this summer in stl. I'm glad you're here :-)</p>
 </div>
 </body>
-
 </html>
