@@ -3,7 +3,7 @@ siteHeader('about', 'who is jillian?'); ?>
 <html>
     <body>
     <div class="personalInfo">
-        <br><img src="Jillian_Picture.jpg" alt="Picture of me" width=300px>
+        <br><img src="/images/Jillian_Picture.jpg" alt="Picture of me" width=300px>
         <p><u>From:</u> San Diego, California
             <br><u>Currently:</u> Saint Louis, Missouri
             <br>I'm studying economics and psychology at Washington University

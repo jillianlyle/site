@@ -1,0 +1,128 @@
+body{
+    margin:0px;
+    background-color:#dbdbdb;
+    color:black;
+}
+table{
+    width:100%;
+    margin-bottom:20px;
+}
+a:link{
+    color:#828282;
+    text-decoration:none;
+}
+a:visited{
+    color:#828282;
+}
+a:hover{
+    color:white;
+}
+td.numbers{
+    text-align:center;
+}
+td {
+    width:200px;
+    overflow:hidden;
+}
+td.name{
+    width:500px;
+    overflow:hidden;
+}
+td.name a:hover{
+    background-color:#eeeeee;
+}
+span.Names{
+    text-transform:capitalize;
+}
+span.word{
+    border-bottom-style:solid;
+    border-bottom-color:black;
+}
+
+h1.nameHeader{
+    text-transform:capitalize;
+    border-bottom-style:solid;
+    border-bottom-color:black;
+}
+div.playerName{
+    display:inline-block;
+}
+div.home{
+    display:inline-block;
+    float:right;
+}
+input[type=submit]{
+    padding:5px;
+    border-style:none;
+    background-color:#dbdbdb;
+    color:#828282;
+    font-size:30px;
+}
+div.nextButton input[type=submit]{
+    margin-left:20px;
+}
+form{
+    margin-bottom:5px;
+}
+    input[type=submit]:hover{
+        color:white;
+    }
+div.pages a:hover{
+    background-color:#eeeeee;
+}
+div.pages {
+    display:inline;
+}
+div.nextButton{
+    display:inline-block;
+}
+div.allPages{
+    display:inline-block;
+    float:right;
+    padding-top:5px;
+    font-size:20px;
+    margin-right:20px;
+}
+div.footer{
+    width:100%;
+}
+div.test{
+    display:inline-block;
+}
+span.pagesText{
+    margin-left:20px;
+}
+div.footer{
+    display:inline-block;
+}
+
+div.one{
+    display:inline-block;
+    margin-left:20px;
+}
+div.two{
+    display:inline-block;
+    float:right;
+    margin-right:20px;
+}
+div.filter{
+    margin-left:20px;
+}
+div.stats{
+    display:inline-block;
+    margin-left:20px;
+}
+div.reset{
+    display:inline-block;
+    margin-right:20px;
+    float:right;
+}
+td.name a:link{
+    color:black;
+}
+td.name a:visited{
+    color:black;
+}
+td.name a:hover{
+    background-color:#eeeeee;
+}
