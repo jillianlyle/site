@@ -9,11 +9,12 @@ ul {
     padding:0;
     margin-right:10px;
     overflow: hidden;
-    top: 9px;
     font-size:25px;
 }
     li {
         float:right;
+        border-color:white;
+        border-style:hidden;
     }
     li a {
         display:block;
@@ -23,14 +24,8 @@ ul {
         margin:20px;
         text-decoration: none;
     }
-    li a:hover{
-        border-style:solid;
-        border-color:#ffffff;
-        padding:10px;
-        margin:0px;
-    }
 div.headerBackgroundImage{
-    background: url(homepagesunset.jpg);
+    background: url(/images/homepagesunset.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     padding-bottom:180px;

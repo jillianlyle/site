@@ -18,13 +18,13 @@ ul {
     padding:0;
     margin-right:10px;
     overflow: hidden;
-    top: 9px;
     font-size:25px;
     width:100%;
 }
     li{
         float:right;
         color:white;
+        border-color:white;
     }
     li a {
         display:block;
@@ -34,23 +34,34 @@ ul {
         margin:20px;
         text-decoration:none;
     }
-    li a:hover{
-        border-style:solid;
-        border-color:#ffffff;
-        background-color:#cdcaf6;
-        padding:10px;
-        margin:0px;
-    }
     li a:link{
         color:#ffffff;
     }
     li a:visited{
         color:#ffffff;
     }
+    li a:hover{
+        background-color:#cdcaf6;
+    }
 div.headerBlueBackground{
     background-color:#cdcaf6;
     padding-bottom:80px;
 }
+div.adminButton{
+    padding:20px;
+    padding-top:10px;
+}
+    div.adminButton a{
+        color:black;
+        text-decoration:none;
+        font-weight:bold;
+    }
+    div.adminButton a:hover{
+        background-color:#cdcaf6;
+    }
+    div.adminButton a:visited{
+        color:#black;
+    }
 h1 {
     color:white;
     font-size: 80px;
@@ -80,9 +91,16 @@ div.blogInspirationTable table{
         vertical-align:top;
         padding-top:10px;
     }
+    div.blogInspirationTable td ul{
+        width:100%;
+        color:black;
+    }
         div.blogInspirationTable td img {
             vertical-align:middle;
         }
+div.postSubHeader{
+    width:50%;
+}
 div.postSubHeader h2{
     margin:20px 20px 0px;
     text-decoration:underline;
@@ -91,6 +109,14 @@ div.postSubHeader h2{
     font-size:50px;
     color:black;
     }
+div.child1{
+    width:50%;
+    float:left;
+}
+div.child2{
+    float:right;
+    width:50%;
+}
 div.postBody{
     margin:20px;
     margin-bottom:40px;
@@ -98,6 +124,7 @@ div.postBody{
 div.blogCommentForm{
     margin-top:10px;
     margin-bottom:0px;
+    width:50%;
 }
     div.blogCommentForm h3{
         font-weight:bold;

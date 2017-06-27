@@ -4,9 +4,9 @@ siteHeader('resume', 'resume:'); ?>
 <body>
 <div class="resume">
     <p>
-    <a href="Resume_Lyle.pdf">view my resume</a>
+    <a href="/images/Resume_Lyle.pdf">view my resume</a>
     </p>
-    <img src='resumeFlowers.jpg' alt='flowers'>
+    <img src='/images/resumeFlowers.jpg' alt='flowers'>
 </div>
 </body>
 </html>
